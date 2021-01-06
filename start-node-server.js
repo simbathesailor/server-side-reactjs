@@ -1,4 +1,5 @@
 const express = require("express");
+var shell = require("shelljs");
 const fs = require("fs");
 const path = require("path");
 const React = require("react");
@@ -39,9 +40,20 @@ const handler = (req, res) => {
       err,
       stats
     );
-  });
 
-  // const v = ReactDOMServer.renderToString(App);
+    const val = require("./server_dist/index.js");
+    console.log(
+      "🚀 ~ file: start-node-server.js ~ line 46 ~ compiler.run ~ val",
+      val.default
+    );
+    const App = val.default();
+    console.log(
+      "🚀 ~ file: start-node-server.js ~ line 50 ~ compiler.run ~ App",
+      App
+    );
+    const v = ReactDOMServer.renderToString(App);
+    console.log("🚀 ~ file: start-node-server.js ~ line 57 ~ handler ~ v", v);
+  });
 
   // console.log("🚀 ~ file: start-node-server.js ~ line 12 ~ app.get ~ v", v);
 

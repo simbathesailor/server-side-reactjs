@@ -100,6 +100,7 @@ module.exports = ({ path: newPath }) => {
     output: {
       path: path.resolve(__dirname, "server_dist"),
       filename: "index.js",
+      libraryTarget: "commonjs2",
     },
     module: {
       rules: [

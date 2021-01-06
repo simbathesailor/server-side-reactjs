@@ -40,6 +40,14 @@ WHat they do ? Go inside them and undesrtand it. SOmetime later i will see them 
 // https://2ality.com/2019/10/hybrid-npm-packages.html
 
 
+https://www.digitalocean.com/community/tutorials/react-server-side-rendering#:~:text=Server%2Dside%20rendering%20(SSR),served%20as%20static%20HTML%20markup.
+
+https://www.brettjankord.com/2020/09/21/how-to-inject-server-rendered-html-into-create-react-app-with-express/
+
+
+
+
+
 
 
 
